@@ -1,0 +1,60 @@
+<!-- <Button text="home works!" class="btn btn-primary"></Button> -->
+
+<!-- <Page.actionBar>
+    <ActionBar title="SideDrawer Button">
+        <android>
+            <NavigationButton icon="res://menu" tap="showSideDrawer" />
+        </android>
+       
+    </ActionBar>
+</Page.actionBar> -->
+
+
+<!-- <ActionBar>
+    <StackLayout *ngIf="isAndroid" horizontalAlignment="left" verticalAlignment="center">
+      <Label [style.background-image]='res://menu' style.background-position="center"
+              style.background-size="cover" class="avatarImage" height="30" width="30" borderRadius="50"
+              backgroundColor="#eeeeee"></Label>
+    </StackLayout>
+  </ActionBar> -->
+  
+  <GridLayout>
+    <ScrollView>
+        <GridLayout rows="auto, auto, auto" class="borderRadius">
+            <!-- <Image [src]="car.imageUrl" stretch="aspectFill" height="200" class="m-b-15"></Image> -->
+
+            <StackLayout row="1" class="hr m-y-15"></StackLayout>
+
+            <GridLayout row="2" rows="*,*,*,*,*,*" columns="auto, auto">
+
+                <Label text="Price" class="p-l-15 p-b-10 m-r-20"></Label>
+                <Label col="1" class="p-b-10">
+                    <FormattedString>
+                        <Span text="&euro;"></Span>
+                        <Span text="car"></Span>
+                        <Span text="day"></Span>
+                    </FormattedString>
+                </Label>
+
+                <Label text="Class" class="p-l-15 p-b-10 m-r-20" row="1"></Label>
+                <Label text="car" row="1" col="1" class="p-b-10"></Label>
+
+                <Label text="Doors" class="p-l-15 p-b-10 m-r-20" row="2"></Label>
+                <Label text="car.doors" row="2" col="1" class="p-b-10"></Label>
+
+                <Label text="Seats" class="p-l-15 p-b-10 m-r-20" row="3"></Label>
+                <Label text="car" row="3" col="1" class="p-b-10"></Label>
+
+                <Label text="Transmission" class="p-l-15 m-r-20 p-b-10" row="4"></Label>
+                <Label text="car" row="4" col="1" class="p-b-10"></Label>
+
+                <Label text="Luggage" class="p-l-15 p-b-10 m-r-20" row="5"></Label>
+                <Label text="luggage" row="5" col="1" class="p-b-10"></Label>
+            </GridLayout>
+        </GridLayout>
+    </ScrollView>
+</GridLayout>
+
+
+ <Label text="this is home page" style="text-align: center; margin-top: 600px; color: darkblue;"></Label>
+<Button class="btn btn-primary" text="go back to setting page" [nsRouterLink]="['/setting']"></Button> 

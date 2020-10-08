@@ -1,0 +1,16 @@
+{
+  "parts": [
+    {
+      "id": 1,
+      "name": "GTX 1080",
+      "stockCount": 10
+    
+    },
+    {
+      "id": 2,
+      "name": "RX 580",
+      "stockCount": 8
+     
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<!-- <Button text="bar-chart works!" class="btn btn-primary"></Button> -->
+
+<GridLayout rows="*" height="500px">
+    <RadCartesianChart row="0" style="font-size: 12;">
+        <CategoricalAxis tkCartesianHorizontalAxis></CategoricalAxis>
+        <LinearAxis tkCartesianVerticalAxis></LinearAxis>
+        <BarSeries tkCartesianSeries [items]="categoricalSource"
+            categoryProperty="Country" valueProperty="Amount"></BarSeries>
+    </RadCartesianChart>
+</GridLayout>

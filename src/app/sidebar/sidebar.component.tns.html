@@ -1,0 +1,60 @@
+<!-- <Button text="sidebar works!" class="btn btn-primary"></Button> -->
+<GridLayout rows="*" height="1500px">
+    <RadSideDrawer>
+        <StackLayout tkDrawerContent backgroundColor="gray">
+            <StackLayout height="56"
+                style="text-align: center; vertical-align: center;">
+                <Label text="Navigation Menu"></Label>
+            </StackLayout>
+            <StackLayout>
+                <Label text="Primary" padding="10"
+                    ></Label>
+                 <!-- <buttom text="Social" padding="10"  class="btn btn-primary" backgroundColor="lightgray"></button> -->
+                <Label text="Promotions" padding="10"></Label>
+              
+              
+              
+                <!-- <label  routerLink="/setting"  text="test" padding="10"></label>  -->
+
+                <!-- <a [nsRouterLink]="['setting']">test</a> -->
+              
+                
+               <!-- <Button text="First" [nsRouterLink]="['/setting']"  pageTransition="slide"  class="btn btn-primary btn-active"></Button> -->
+               <Label  text="Item" padding="10" backgroundColor="lightgray" [nsRouterLink]="['/setting']"></Label>
+                        <!-- <Button text="Second" [nsRouterLink]="['second']" class="btn btn-primary btn-active" col="1"></Button> -->
+                    
+               <Label text="equip" padding="10" backgroundColor="red" [nsRouterLink]="['/equip']">
+                </Label>
+                <Label text="Important" padding="10"></Label>
+                <Label text="Starred" padding="10"></Label>
+                <Label text="Sent Mail" padding="10"></Label>
+                <Label text="Drafts" padding="10"></Label>
+            </StackLayout>
+            <Label text="Close" color="lightgray" padding="10"
+                style="horizontal-align: center" (tap)="onCloseDrawerTap()">
+            </Label>
+        </StackLayout>
+        <StackLayout tkMainContent>
+        
+            <!-- <Button text="Open Drawer" (tap)="onOpenDrawerTap()" margin="10" -->
+                <!-- icon="res://icon" -->
+                <!-- android.icon="res://icon" android.iconVisibility="always" -->
+
+
+                 <Button  text="menu" (tap)="onOpenDrawerTap()" margin="10"
+                style="horizontal-align:left"></Button> 
+                 
+
+                <!-- <NavigationButton text="Back"  @tap="onNavigationButtonTap"></NavigationButton> -->
+
+
+                <app-header style="margin-top:100px;"></app-header>
+                <app-bar-chart style="margin-top:300px;"></app-bar-chart>
+                <app-footer style="margin-top:auto"></app-footer>
+                
+        </StackLayout>
+             
+    </RadSideDrawer>
+</GridLayout>
+
+<!-- <app-header style="margin-top:200px;"></app-header> -->

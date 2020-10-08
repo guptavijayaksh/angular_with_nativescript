@@ -1,0 +1,96 @@
+
+
+<StackLayout style="margin-top: 1100px;">
+    <ActionBar title="Add Equip"></ActionBar>
+    <TextField [(ngModel)]="equip.equip" hint="Please Enter Equip">
+    </TextField>
+    <TextField [(ngModel)]="equip.equipdescription" hint="Please Enter Description">
+    </TextField>
+    <Button text="Submit"></Button>
+</StackLayout>
+    
+<!-- <StackLayout style="margin-top:500px ;"> 
+<GridLayout columns="auto,auto" rows="auto">
+    <Button col="0" text="hello" style="padding-top:10 ;" ></Button>
+    <Label col="0" text="hello" style=" padding-left:1cm ;" ></Label>
+    <Button col="1" text="ohai" style="padding-top:10 ;"></Button>
+    <Label col="1" text="ohai" style="padding-left:1cm ;"></Label>
+</GridLayout>
+</StackLayout> -->
+
+
+
+
+
+    <GridLayout width="100%" columns="3*,2.5*,1.5*,1.5*,2*"  rows="*, *" orientation="horizontal" >
+
+        <Label col="0" text="Customer" class="fxFlex" [ngStyle]="{'padding-left': 20}"></Label>
+        <Label text="Label 3" row="1" col="2" backgroundColor="blue" class="header-text" [ngStyle]="{'padding-left': 20}"></Label>
+        <Label col="1" text="Order" class="header-text-center"></Label>
+        <Label col="2" text="Qty" class="header-text-center"></Label>
+        <Label col="3" text="Load" class="header-text"></Label>
+        <Label col="4" text="Status" class="header-text-center" [ngStyle]="{'padding-left': 20}"></Label>
+    </GridLayout>
+
+
+
+
+
+
+
+
+
+    <!-- <GridLayout [columns]="getEquips()"> -->
+
+
+
+
+ <GridLayout columns="60, 9*, 9*" rows="*, *" height="230"
+    backgroundColor="lightgray">
+    <Label text="Label 1" row="0" col="0" backgroundColor="red"></Label>
+    <Label text="Label 2" row="0" col="1" backgroundColor="green"></Label>
+    <Label text="Label 3" row="0" col="2" backgroundColor="blue"></Label>
+
+    <Label text="Label 4" row="1" col="0" backgroundColor="yellow"></Label>
+    <Label text="Label 5" row="1" col="1" backgroundColor="orange"></Label>
+    <Label text="Label 6" row="1" col="2" backgroundColor="pink"></Label>
+
+</GridLayout> 
+
+<!--
+Original Web template:
+
+<div fxLayout="row" fLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
+    <mat-card fxFlex="75">
+        <app-dynamictable name='hello' (notify)="handleNotify($event)" (equip)="getEquipprop($event)"  [dataSource]="dataSource" [displayedColumns]="displayedColumns"></app-dynamictable>
+    </mat-card>
+
+
+    <mat-card fxFlex="25">
+        <mat-toolbar color="primary">Add Equip</mat-toolbar>
+        <br>
+        <form fxLayoutAlign="stretch" fxLayout="column" class="login-form" (ngSubmit)="onsubmit()">
+            <mat-form-field>
+                <input matInput class="form-control" name="equip" placeholder="Equip" [(ngModel)]="equip.equip"
+                    required>
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput class="form-control" name="equipdescription" placeholder="EquipDescription"
+                    [(ngModel)]="equip.equipdescription" required>
+            </mat-form-field>
+
+            <mat-checkbox color="primary" class="form-check-input" name="activestatus" ng-true-value="'YES'"
+                ng-false-value="'NO'" [(ngModel)]="equip.activestatus">Active Status</mat-checkbox>
+            <br>
+            <!-- <mat-form-field>
+                
+            </mat-form-field>  ->
+            <button mat-raised-button type="submit">{{title}}</button>
+        </form>
+
+    </mat-card>
+
+  
+</div>
+-->
